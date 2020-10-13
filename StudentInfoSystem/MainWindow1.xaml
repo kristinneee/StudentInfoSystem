@@ -1,0 +1,36 @@
+﻿<Window x:Class="StudentInfoSystem.MainWindow1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentInfoSystem"
+        mc:Ignorable="d"
+        Title="MainWindow1" Height="300" Width="300">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="bbb.jpg"/>
+        </Grid.Background>
+        <Label Content="Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,73,0,0" Width="60"/>
+        <Label Content="Password" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,112,0,0"/>
+        <TextBox x:Name="txt2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="92,115,0,0"/>
+        <TextBox x:Name="txt1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="92,73,0,0" TextChanged="TextBox_TextChanged"/>
+
+        <Label Content="Loggin" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,23,0,0" Width="82" Height="42"/>
+        <local:CustomControl Text="Login"
+                                       ImageSource="login.png"
+                                       ImageHeight="37"
+                                       ImageWidth="40"
+                                       HorizontalAlignment="Left"
+                                       Margin="27,156,0,81.4"
+                                       Click="Button_Click"
+                                       />
+        <local:CustomControl Text="Problems"
+                               ImageSource="info.png"
+                               ImageHeight="30" ImageWidth="30"
+                               HorizontalAlignment="Left"
+                               Margin="27,211,0,29.4"
+                               Width="235"
+                             Click="Button_Click_1"
+                               />
+    </Grid>
+</Window>
